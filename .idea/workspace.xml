@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="309d9cbb-422d-4dcc-a87f-8b206b226f73" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV-small-device.css" beforeDir="false" afterPath="$PROJECT_DIR$/CV-small-device.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CV.css" beforeDir="false" afterPath="$PROJECT_DIR$/CV.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mern-pool/W-JSC-502-REN-2-1-mernj4-nicolas.de-meyere-dos-santos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -49,7 +52,10 @@
       <workItem from="1622057210258" duration="714000" />
       <workItem from="1622104360270" duration="82000" />
       <workItem from="1622116172671" duration="10024000" />
-      <workItem from="1622186503581" duration="2009000" />
+      <workItem from="1622186503581" duration="2422000" />
+      <workItem from="1629718207539" duration="2651000" />
+      <workItem from="1629798436394" duration="17000" />
+      <workItem from="1629805119317" duration="3771000" />
     </task>
     <servers />
   </component>
