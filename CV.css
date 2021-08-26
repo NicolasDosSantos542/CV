@@ -1,6 +1,18 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url('assets/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: bold;
+    src: url('/assets/Montserrat/Montserrat-Bold.ttf');
+}
+
 body {
     /*background-color: #d9d9d9;*/
-
+    font-family: "Montserrat", arial, serif;
 }
 
 li {
@@ -9,44 +21,43 @@ li {
 }
 
 .container {
-    max-height: 3508px;
-    width: 1250px;
+    height: 3508px;
+    width: 2504px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     padding: 10px 40px 10px 40px; /* top right bottom left*/
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1px;
-    font-size: 1.2em;
+    font-size: 2em;
     /*background-color: #d9d9d9;*/
     /*grid-auto-rows: minmax(85px, auto);*/
 }
 
 h3 {
-    color: #fff;
     margin-left: 10px;
     margin-right: 10px;
     /*width: 60%;*/
     text-align: center;
-    background-color: #1C3B4F;
 
 }
 
-.dates {
-    color: #d5670d;
+.color2{
+    color: #0b43b7;
+
+}
+.bgcolor1{
+    color: #fff;
+    background-color: #323e59;
+    /*background-color: #333f5b;*/
 
 }
 
-.strong {
-    color: #b15003;
-
-}
 
 .name {
-    background-color: #1C3B4F;
     grid-column: 1/span 2;
     text-align: center;
-    color: #fff;
 
     /*grid-row: 1;*/
 }
@@ -55,17 +66,14 @@ h3 {
     grid-column: 1/span 2;
     grid-row: 2;
     text-align: center;
-    background-color: #d5670d;
-    color: #fff;
 
 }
 
 .subTitle {
     text-align: center;
     grid-column: 1/span 2;
-    background-color: #102c3e;
-    color: #fff;
     /*grid-row: 1;*/
+    font-weight: bold;
 }
 
 .personnal {
@@ -73,45 +81,23 @@ h3 {
     }
 .personnal div{
     margin: 25% 0 25% 0;
+    padding-left: 2em;
 }
-
-
-.contact {
-    /*grid-row: 1;*/
-}
-
 .contact > ul > li {
     list-style-type: none;
 }
 
-.know-more {
-    /*grid-row: 1;*/
-}
-
-.soft-skills {
-    /*grid-row: 1;*/
-}
-
-.professionnal {
-
-
-}
-.global-skills {
-}
-
-.new-skills {
-    /*grid-row: 1;*/
-}
-
-.code {
-    color: #d5670d;
-    font-weight: bold;
-}
-
-.background {
-    /*grid-row: 1;*/
-}
-
+.global-skills,
+.new-skills,
+.background,
 .studies {
-    /*grid-row: 1;*/
+    margin: 15% 0 15% 0;
+padding-left: 100px;
 }
+
+
+a{
+    color: #fff;
+}
+
+
