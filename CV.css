@@ -86,9 +86,7 @@ h3 {
 .photo{
     margin: 25% 0 25% 0;
     padding-left: 5em !important;
-    /* width: 500px;
-    height:500px;
-   background-image: url("./assets/Nico.jpg"); */
+   
 
 }
 .photo_profil{
@@ -103,7 +101,7 @@ h3 {
 .new-skills,
 .background,
 .studies {
-    margin: 15% 0 15% 0;
+    margin: 0;
 padding-left: 100px;
 }
 
