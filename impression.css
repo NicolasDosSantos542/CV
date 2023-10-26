@@ -1,0 +1,18 @@
+@media print {
+    /* /!\ à l'impression penser à cocher la case "imprimer les arrières-plans" /!\ */
+
+
+    .container {
+        /* this affects the margin on the content before sending to printer */
+        /* réduit la marge de la page pour l'impression  */
+        margin: 0px;
+    }
+
+    @page {
+        /* supprime les métadonnées de page a l'impression (n°page, url ...) */
+        size: auto;
+        /* auto is the initial value */
+        margin: 0;
+    }
+
+}
