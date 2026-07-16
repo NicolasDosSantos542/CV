@@ -1,18 +1,40 @@
 @media print {
     /* /!\ à l'impression penser à cocher la case "imprimer les arrières-plans" /!\ */
 
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        display: block;
+        background: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
 
     .container {
-        /* this affects the margin on the content before sending to printer */
-        /* réduit la marge de la page pour l'impression  */
-        margin: 0px;
-    }
-
-    @page {
-        /* supprime les métadonnées de page a l'impression (n°page, url ...) */
-        size: auto;
-        /* auto is the initial value */
+        position: static;
+        width: 100%;
+        height: auto;
+        max-width: none;
+        max-height: 277mm;
         margin: 0;
+        padding: 0;
+        box-shadow: none;
+        transform: none !important;
+        overflow: hidden;
+        page-break-after: avoid;
     }
 
+    .name h1,
+    .job h2 {
+        margin-top: 0;
+    }
 }

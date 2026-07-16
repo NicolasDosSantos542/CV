@@ -1,126 +1,228 @@
 @font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    src: url('assets/Montserrat/Montserrat-Regular.ttf');
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("assets/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    font-weight: bold;
-    src: url('/assets/Montserrat/Montserrat-Bold.ttf');
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("assets/Montserrat/Montserrat-Bold.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    /*background-color: #d9d9d9;*/
-    font-family: "Montserrat", arial, serif;
+  margin: 0;
+  font-size: 9px;
+  font-family: "Montserrat", arial, serif;
+  overflow-x: hidden;
+}
+
+@media screen {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1cm 0;
+    background-color: #d9d9d9;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 li {
-    margin-bottom: 1em;
-    list-style: square;
+  margin-bottom: 0.35em;
+  list-style: square;
 }
-p{
-    margin: 0.1em 0 0.1em 0;
+
+p {
+  margin: 0.1em 0;
+  line-height: 1.25;
 }
 
 .container {
-    height: 3450;
-    width: 2480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 40px 10px 40px; /* top right bottom left*/
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 1px;
-    font-size: 2em;
-    /* background-color: #d9d9d9;
-    grid-auto-rows: minmax(85px, auto); */
+  width: 21cm;
+  height: 29.7cm;
+  max-width: 21cm;
+  max-height: 29.7cm;
+  margin: 0 auto;
+  padding: 0.5cm 0.6cm;
+  display: grid;
+  grid-template-columns: 6cm 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0.25cm;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin: 0.15em 0;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.35em;
+  margin: 0.15em 0;
+  line-height: 1.15;
 }
 
 h3 {
-    margin-left: 10px;
-    margin-right: 10px;
-    /*width: 60%;*/
-    /* text-align: center; */
-
+  font-size: 1.05em;
+  margin: 0.35em 0 0.15em;
 }
 
-.color2{
-    color: #0b43b7;
-
-}
-.bgcolor1{
-    color: #fff;
-    background-color: #323e59;
-    /*background-color: #333f5b;*/
-
+.color2 {
+  color: #0b43b7;
 }
 
-
-.name {
-    grid-column: 1/span 2;
-    text-align: center;
-
-    /*grid-row: 1;*/
+.bgcolor1 {
+  color: #fff;
+  background-color: #323e59;
 }
-
+.smaller-text {
+  font-size: 0.95em;
+}
+.name,
 .job {
-    grid-column: 1/span 2;
-    grid-row: 2;
-    text-align: center;
-
+  text-align: center;
 }
 
 .subTitle {
-    text-align: center;
-    grid-column: 1/span 2;
-    /*grid-row: 1;*/
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .personnal {
-    grid-column: 1/span 1;
-    }
-.personnal div{
-    margin: 25% 0 0 0;
-    padding-left: 2em;
+  grid-column: 1;
+  align-self: stretch;
+  min-height: 100%;
+  overflow: hidden;
 }
-.photo{
-    margin: 25% 0 25% 0;
-    padding-left: 5em !important;
-   
 
+.professionnal {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
 }
-.photo_profil{
-    border-radius: 50%;
 
+.personnal div {
+  margin: 0.35cm 0 0;
+  padding-left: 0.35cm;
+  padding-right: 0.2cm;
 }
+
+.photo {
+  margin: 0.25cm 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.photo_profil {
+  border-radius: 50%;
+  width: 2.6cm;
+  height: 2.6cm;
+  object-fit: cover;
+}
+
 .contact > ul > li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+.summary,
+.dev-experience,
 .global-skills,
 .new-skills,
-.background,
+.previous-career,
 .studies {
-    margin-top: 2%;
-padding-left: 100px;
-}
-.skills{
-    display:flex;
-    justify-content: space-between;
+  margin-top: 0.25cm;
+  padding-left: 0.35cm;
 }
 
-.link{
-    color: #fff;
-}
-a{
-    color: #000;
+.summary p {
+  margin: 0;
 }
 
-@media print {
-    .container{
-      margin: 0;
-      
-    }
+.previous-career ul {
+  padding-left: 1.2em;
+}
+
+.previous-career li {
+  margin-bottom: 0.2em;
+  list-style: square;
+}
+
+.dev-experience > ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.dev-experience > ul > li {
+  list-style: none;
+  margin-bottom: 0.5em;
+  padding-left: 0;
+}
+
+.dev-experience ul ul {
+  padding-left: 1.1em;
+  margin: 0.15em 0 0;
+}
+
+.dev-experience ul ul li {
+  list-style: square;
+  margin-bottom: 0.2em;
+}
+
+.projects p {
+  margin-top: 0.3em;
+  padding-left: 0.35cm;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25cm;
+}
+
+.skills > ul {
+  flex: 1;
+  min-width: 0;
+}
+
+.skills ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.link {
+  color: #fff;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: #000;
+  overflow-wrap: break-word;
+}
+
+/* Réduction proportionnelle à l'écran si la page A4 ne tient pas en largeur */
+@media screen and (max-width: 22cm) {
+  body {
+    padding: 0.5rem 0;
   }
+
+  .container {
+    transform: scale(calc((100vw - 1rem) / 21cm));
+    transform-origin: top center;
+  }
+}
