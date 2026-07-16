@@ -6,12 +6,15 @@
         margin: 10mm;
     }
 
-    html,
+    html {
+        height: 100%;
+    }
+
     body {
         margin: 0 !important;
         padding: 0 !important;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         display: block;
         background: none;
@@ -20,17 +23,35 @@
     }
 
     .container {
-        position: static;
+        position: relative;
         width: 100%;
-        height: auto;
-        max-width: none;
-        max-height: 277mm;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
         margin: 0;
-        padding: 0;
+        padding: 4mm 5mm;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 6cm 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0.25cm;
+        align-items: stretch;
+        background-color: #fff;
         box-shadow: none;
         transform: none !important;
         overflow: hidden;
         page-break-after: avoid;
+    }
+
+    .personnal {
+        align-self: stretch;
+        min-height: 100%;
+        height: 100%;
+    }
+
+    .professionnal {
+        background-color: #fff;
+        min-height: 100%;
     }
 
     .name h1,
